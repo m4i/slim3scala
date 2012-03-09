@@ -1,0 +1,17 @@
+val controller = this.controller.asInstanceOf[tutorial_scala.controller.twitter.IndexController]
+import controller._
+import scala.collection.JavaConversions._
+layout = "/layout.html"
+requestScope("title", "twitter Index")
+
+<body>
+
+<p>What are you doing?</p>
+<form method="post" action="tweet">
+  <div><textarea name="content"></textarea></div>
+  <div><input type="submit" value="tweet"/></div>
+</form>
+
+{ tweetList.map(t => <p>{ t.content }</p><hr />) }
+
+</body>

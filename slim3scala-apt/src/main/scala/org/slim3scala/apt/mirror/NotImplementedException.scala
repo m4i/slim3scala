@@ -1,0 +1,3 @@
+package org.slim3scala.apt.mirror
+
+class NotImplementedException extends UnsupportedOperationException

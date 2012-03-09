@@ -1,0 +1,11 @@
+/project/boot/
+/project/build/target/
+/target/
+/slim3scala/lib_managed/
+/slim3scala/target/
+/slim3scala-apt/lib_managed/
+/slim3scala-apt/target/
+/slim3scala-gen/lib_managed/
+/slim3scala-gen/target/
+/slim3scala-sbt/lib_managed/
+/slim3scala-sbt/target/

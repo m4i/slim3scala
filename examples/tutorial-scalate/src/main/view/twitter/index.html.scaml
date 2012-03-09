@@ -1,0 +1,15 @@
+-@ val controller: tutorial_scalate.controller.twitter.IndexController
+- import controller._
+- attributes("layout") = "/layout.html.scaml"
+- attributes("title") = "twitter Index"
+
+%p What are you doing?
+%form(method="post" action="tweet")
+  %div
+    %textarea(name="content")
+  %div
+    %input(type="submit" value="tweet")
+
+- for (tweet <- tweetList)
+  %p= tweet.content
+  %hr
